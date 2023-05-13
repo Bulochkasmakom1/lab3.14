@@ -3,16 +3,16 @@ package org.example;
 import java.util.Collection;
 import java.util.Comparator;
 
-public class Tree<T> {
+public class MyTree<T> {
     private final Comparator<T> comparator;
     private Node<T> root;
 
-    public Tree(Comparator<T> comparator) {
+    public MyTree(Comparator<T> comparator) {
         this.root = null;
         this.comparator = comparator;
     }
 
-    public Tree(Collection<T> collection, Comparator<T> comparator) {
+    public MyTree(Collection<T> collection, Comparator<T> comparator) {
         this.comparator = comparator;
         collection.forEach(this::add);
     }

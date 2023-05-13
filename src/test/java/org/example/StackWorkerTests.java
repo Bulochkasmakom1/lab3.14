@@ -7,12 +7,12 @@ import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MyStackTests {
-    private MyStack<Integer> stack;
+public class StackWorkerTests {
+    private StackWorker<Integer> stack;
 
     @Before
     public void setUp() {
-        stack = new MyStack<>(1, 2, 3, 4, 5);
+        stack = new StackWorker<>(1, 2, 3, 4, 5);
     }
 
     @Test

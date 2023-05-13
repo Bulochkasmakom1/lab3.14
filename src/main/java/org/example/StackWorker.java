@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class MyStack<T> implements Iterable<T> {
+public class StackWorker<T> implements Iterable<T> {
 
     private Node<T> tail;
 
@@ -12,13 +12,13 @@ public class MyStack<T> implements Iterable<T> {
 
 
     @SafeVarargs
-    public MyStack(T... objects) {
+    public StackWorker(T... objects) {
         for (T object : objects) {
             push(object);
         }
     }
 
-    public MyStack(Collection<? extends T> collection) {
+    public StackWorker(Collection<? extends T> collection) {
         collection.forEach(this::push);
     }
 
